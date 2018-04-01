@@ -11,7 +11,9 @@ import argparse
 
 def create_material(boron_conc,pitch,lattice,enrichment,moderator,temp1,temp2):
   
-
+            rf = 0.50
+            r2 = rf + 0.01
+            r3 = rf + 0.06
             uo2 = openmc.Material(1,"fuel",temperature=temp1)
             uo2.add_element('U', 1.0, enrichment=enrichment)
             uo2.add_element('O', 2.0)
@@ -39,9 +41,9 @@ def create_material(boron_conc,pitch,lattice,enrichment,moderator,temp1,temp2):
 
             mats = openmc.Materials([uo2, zirconium, mod])
             mats.export_to_xml()
-            fuel_or = openmc.ZCylinder(R=0.50)
-            clad_ir = openmc.ZCylinder(R=0.51)
-            clad_or = openmc.ZCylinder(R=0.57)
+            fuel_or = openmc.ZCylinder(R=rf)
+            clad_ir = openmc.ZCylinder(R=r2)
+            clad_or = openmc.ZCylinder(R=r3)
             fuel_region = -fuel_or
             gap_region = +fuel_or & -clad_ir
             clad_region = +clad_ir & -clad_or
@@ -133,35 +135,45 @@ def create_material(boron_conc,pitch,lattice,enrichment,moderator,temp1,temp2):
 
 
 def post_process_statepoint(statepoint):
-       
+       factors = np.zeros([4])
        fiss_rate = statepoint.get_tally(name='fiss.rate')
        abs_rate = statepoint.get_tally(name='abs.rate')
        leak = statepoint.get_tally(name='leakage')
-       
+       leak = leak.summation(filter_type=openmc.CellFilter,remove_filter = True)
        #get k-infinity
        keff = fiss_rate/(abs_rate + leak)
        df1 = keff.get_pandas_dataframe()
        #resonance escape prob
        therm_abs_rate = statepoint.get_tally(name='therm.abs.rate')
        thermal_leak = statepoint.get_tally(name='thermal leakage')
+       thermal_leak = thermal_leak.summation(filter_type=openmc.CellFilter,remove_filter = True)
        res_esc = (therm_abs_rate + thermal_leak) / (abs_rate + thermal_leak)
        df2 = res_esc.get_pandas_dataframe()
+       
+       #factors[0] = (df2['mean'])
+       
        #fast fission factor
        therm_fiss_rate = statepoint.get_tally(name='therm.fiss.rate')
        fast_fiss = fiss_rate / therm_fiss_rate
        df3 = fast_fiss.get_pandas_dataframe()
+       #factors[1] = (df3['mean'])
        #thermal utilization factor
        fuel_therm_abs_rate = statepoint.get_tally(name='fuel.therm.abs.rate')
        therm_util = fuel_therm_abs_rate / therm_abs_rate
        df4 = therm_util.get_pandas_dataframe()
+       #factors[2] = (df4['mean'])
        #eta
        eta = therm_fiss_rate / fuel_therm_abs_rate
        df5 = eta.get_pandas_dataframe()
-
+       #factors[3] = (df5['mean'])
        frames = [df1,df2,df3,df4,df5]
-       result = pd.concat(frames)
-       result.to_csv('five_factor.csv')
-       
+       #result = pd.concat(frames)
+       #result.to_csv('five_factor.csv')
+
+       for i in range(len(factors)):
+          factors[i] = frames[i+1]['mean']
+
+       return factors
        
 
 parser = argparse.ArgumentParser()
@@ -174,6 +186,7 @@ parser.add_argument('-n','--node',action='store_true',
                    help='Are you using Skylake node?')
 
 args = parser.parse_args()
+
 #set MPI argument
 if args.node:
 
@@ -184,27 +197,52 @@ else:
 if (args.problem == 'p1'):
 
   moderator = 'heavy_water'
-  enrichment = 0.007
+  enrichment = None #fresh
   lattice = ['rectangular']
 
+
   if (args.subproblem == 'a'):
-     pitch = [1.40,1.50,1.60]
+     
+     ran = 1
+     offset = 0
      proc_tallies = False
+     title = 'k_versus_rod_pitch'
+     ytitle = 'k'
+     
+     plot_legend = ['Rectangular lattice']
   else:
-     pitch = [1.40]
+     
+     ran = 4
+     offset = 1
+     title = 'Four_factors_versus_rod_pitch'
+     ytitle = 'Four factors'
+     
+     plot_legend = ['esc.prob','fast.fiss','thermal.fiss','eta']
      proc_tallies = True
 
 elif(args.problem == 'p2'):
   
   moderator = 'graphite'
-  enrichment = 0.007
+  enrichment = None #fresh
   lattice = ['rectangular']
 
+  
   if (args.subproblem == 'a'):
-     pitch = [1.40,1.50,1.60]
+     ran = 1
+     offset = 0
+     title = 'k_versus_rod_pitch'
+     ytitle = 'k'
+
+     plot_legend = ['Rectangular lattice']
      proc_tallies = False
   else:
-     pitch = [1.40]
+      
+     ran = 4
+     offset = 1
+     title = 'Four_factors_versus_rod_pitch'
+     ytitle = 'Four factors'
+     
+     plot_legend = ['esc.prob','fast.fiss','thermal.fiss','eta']
      proc_tallies = True
 elif(args.problem == 'p3'):
 
@@ -213,10 +251,18 @@ elif(args.problem == 'p3'):
    lattice = ['rectangular','triangular']
 
    if (args.subproblem == 'a'):
-     pitch = [1.40,1.50,1.60]
+     
+     title = 'k_versus_rod_pitch'
+     ytitle = 'k'
+     ran = 1
+     offset = 0
+     plot_legend = ['Rectangular lattice','Hexagonal lattice']
      proc_tallies = False
    else:
-     pitch  = "Error! Only processing subpart==a for p==3"
+     raise ValueError("cannot specify combination of p3 and subp b")
+
+
+pitch = [1.4,2.0]
 
 #Settings
 
@@ -226,7 +272,7 @@ settings.batches = total_batches
 settings.inactive = 5
 settings.particles = 100000
 
-bounds = [-0.4, -0.4, -0.4, 0.4, 0.4, 0.4]
+bounds = [-0.5, -0.5, -0.5, 0.5, 0.5, 0.5]
 uniform_dist = openmc.stats.Box(bounds[:3], bounds[3:],only_fissionable=True)
 settings.source = openmc.source.Source(space=uniform_dist)
 settings.temperature={'tolerance':10000,'multipole':True}
@@ -237,18 +283,16 @@ settings.export_to_xml()
 #pitch = [1.4]
 boron = [0]
 nt = len(pitch)
-nb = len(boron)
 nl = len(lattice)
 temp1 = 900
 temp2 = 600
-k = np.zeros([nt,nb])
+#k = np.zeros([nt,nl])
+factors = np.zeros([nt,nl,5])
 
+for j in range(nt):
+    for n in range(nl):
 
-for m in range(nb):
-   for j in range(nt):
-       for n in range(nl):
-
-            create_material(boron[m],pitch[j],lattice[n],enrichment,moderator,temp1,temp2)
+            create_material(0,pitch[j],lattice[n],enrichment,moderator,temp1,temp2)
             
             openmc.run(mpi_args=mpi_args)
             
@@ -257,20 +301,30 @@ for m in range(nb):
             # this reads the tally with all reaction rates, not just absorption\n",
             #tally = sp.get_tally(scores=['absorption'])
             # this is the final k-effective of the simulation\n
-            k[j,m] = str(sp.k_combined).split('+')[0]
+            #k[j,m] = str(sp.k_combined).split('+')[0]
+            factors[j,n,0] = str(sp.k_combined).split('+')[0]
             if proc_tallies:
-               post_process_statepoint(sp)
+               factors[j,n,1:5] = post_process_statepoint(sp)
+               
             #os.remove('statepoint.'+str(total_batches)+'.h5')
             os.remove('summary.h5')
             del sp
  
-print(k)
+#print(k)
+print(factors)
 
 plt.figure(figsize=(20,10))
-plt.plot(pitch,k[:,0], linewidth=10)
-plt.legend(['0ppm Boron'], fontsize=30)
+
+   
+for i in range(ran):
+  for j in range(nl):
+      plt.plot(pitch,factors[:,j,i+offset], linewidth=5)
+
+plt.legend(plot_legend, fontsize=12)
+
+plt.title(title,fontsize=30)
 plt.xlabel('Pitch', fontsize=30)
-plt.ylabel('k', fontsize=30)
-plt.xticks(fontsize=24)
-plt.yticks(fontsize=24)
-plt.savefig('keff vs pin pitch.png')
+plt.ylabel(ytitle, fontsize=30)
+plt.xticks(fontsize=14)
+plt.yticks(fontsize=14)
+plt.savefig(title+'_'+args.problem+'.png') 
