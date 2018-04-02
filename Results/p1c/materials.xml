@@ -9,15 +9,15 @@
     <nuclide ao="3.247058953075552e-05" name="U236" />
     <nuclide ao="1.999242" name="O16" />
     <nuclide ao="0.000758" name="O17" />
-    <nuclide ao="1.1144455706306954e-06" name="Dy156" />
-    <nuclide ao="1.89057730731993e-06" name="Dy158" />
-    <nuclide ao="4.634899524998018e-05" name="Dy160" />
-    <nuclide ao="0.00037590647113648585" name="Dy161" />
-    <nuclide ao="0.0005069732305681601" name="Dy162" />
-    <nuclide ao="0.0004954506594003891" name="Dy163" />
-    <nuclide ao="0.000562396996893276" name="Dy164" />
-    <nuclide ao="0.0029839907029270353" name="O16" />
-    <nuclide ao="1.1313612623277687e-06" name="O17" />
+    <nuclide ao="1.112274504804017e-06" name="Dy156" />
+    <nuclide ao="1.8868942492211005e-06" name="Dy158" />
+    <nuclide ao="4.625870217300993e-05" name="Dy160" />
+    <nuclide ao="0.00037517416287934075" name="Dy161" />
+    <nuclide ao="0.0005059855894621845" name="Dy162" />
+    <nuclide ao="0.0004944854655643001" name="Dy163" />
+    <nuclide ao="0.0005613013840314559" name="Dy164" />
+    <nuclide ao="0.0029781775520536513" name="O16" />
+    <nuclide ao="1.129157242823364e-06" name="O17" />
   </material>
   <material id="2" name="zirconium">
     <temperature>600</temperature>

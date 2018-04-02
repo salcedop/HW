@@ -16,7 +16,7 @@ def build_first_model(ppm):
             r2 = rfuel + 0.01
             r3 = rfuel + 0.06
             lattice="rectangular"
-            pitch = 10.
+            pitch = 9.
             uo2 = openmc.Material(1,"fuel",temperature=900)
             uo2.add_element('U', 1.0, enrichment=0.7)
             uo2.add_element('O', 2.0)

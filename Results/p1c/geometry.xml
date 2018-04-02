@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <geometry>
-  <cell id="1" material="1" name="fuel" region="-155" universe="23" />
-  <cell id="2" material="void" name="air gap" region="155 -156" universe="23" />
-  <cell id="3" material="2" name="clad" region="156 -157" universe="23" />
-  <cell id="4" material="3" name="moderator" region="158 -159 160 -161 157" universe="23" />
-  <surface coeffs="0.0 0.0 0.5" id="155" type="z-cylinder" />
-  <surface coeffs="0.0 0.0 0.51" id="156" type="z-cylinder" />
-  <surface coeffs="0.0 0.0 0.56" id="157" type="z-cylinder" />
-  <surface boundary="reflective" coeffs="-5.0" id="158" name="minimum x" type="x-plane" />
-  <surface boundary="reflective" coeffs="5.0" id="159" name="maximum x" type="x-plane" />
-  <surface boundary="reflective" coeffs="-5.0" id="160" name="minimum y" type="y-plane" />
-  <surface boundary="reflective" coeffs="5.0" id="161" name="maximum y" type="y-plane" />
+  <cell id="1" material="1" name="fuel" region="-78" universe="12" />
+  <cell id="2" material="void" name="air gap" region="78 -79" universe="12" />
+  <cell id="3" material="2" name="clad" region="79 -80" universe="12" />
+  <cell id="4" material="3" name="moderator" region="81 -82 83 -84 80" universe="12" />
+  <surface coeffs="0.0 0.0 0.5" id="78" type="z-cylinder" />
+  <surface coeffs="0.0 0.0 0.51" id="79" type="z-cylinder" />
+  <surface coeffs="0.0 0.0 0.56" id="80" type="z-cylinder" />
+  <surface boundary="reflective" coeffs="-4.5" id="81" name="minimum x" type="x-plane" />
+  <surface boundary="reflective" coeffs="4.5" id="82" name="maximum x" type="x-plane" />
+  <surface boundary="reflective" coeffs="-4.5" id="83" name="minimum y" type="y-plane" />
+  <surface boundary="reflective" coeffs="4.5" id="84" name="maximum y" type="y-plane" />
 </geometry>

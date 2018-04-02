@@ -1,0 +1,154 @@
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)

@@ -1,0 +1,25 @@
+Jobid: 39265
+qsub -n 1 -q skylake_8180 -t 1000 ./HW4_P3.py -p p1 -n
+Mon Apr 02 01:25:54 2018 +0000 (UTC) submitted with cwd set to: /home/salcedop/211/HW/HW/Results/p1c
+jobid 39265 submitted from terminal /dev/pts/1
+Mon Apr 02 01:26:15 2018 +0000 (UTC) 
+Mon Apr 02 01:26:15 2018 +0000 (UTC) Command: '/usr/bin/ssh' 'skylake09' '/usr/libexec/cobalt/cobalt-launcher.py' '--nf' '/var/tmp/cobalt.39265' '--jobid' '39265' '--cwd' '/home/salcedop/211/HW/HW/Results/p1c' '--env' 'COBALT_JOBID=39265' '/home/salcedop/211/HW/HW/Results/p1c/./HW4_P3.py' '-p' 'p1' '-n'
+Mon Apr 02 01:26:15 2018 +0000 (UTC) 
+Mon Apr 02 01:26:15 2018 +0000 (UTC) Environment:
+Mon Apr 02 01:26:15 2018 +0000 (UTC) SHELL=/bin/bash
+Mon Apr 02 01:26:15 2018 +0000 (UTC) COBALT_NODEFILE=/tmp/tmpDLtFne
+Mon Apr 02 01:26:15 2018 +0000 (UTC) COBALT_PARTNAME=skylake09
+Mon Apr 02 01:26:15 2018 +0000 (UTC) COBALT_JOBID=39265
+Mon Apr 02 01:26:15 2018 +0000 (UTC) COBALT_STARTTIME=1522632363
+Mon Apr 02 01:26:15 2018 +0000 (UTC) LOGNAME=salcedop
+Mon Apr 02 01:26:15 2018 +0000 (UTC) USER=salcedop
+Mon Apr 02 01:26:15 2018 +0000 (UTC) COBALT_ENDTIME=1522692363
+Mon Apr 02 01:26:15 2018 +0000 (UTC) COBALT_PARTSIZE=1
+Mon Apr 02 01:26:15 2018 +0000 (UTC) HOME=/home/salcedop
+Mon Apr 02 01:26:15 2018 +0000 (UTC) COBALT_JOBSIZE=1
+Mon Apr 02 01:26:15 2018 +0000 (UTC) 
+Mon Apr 02 01:26:15 2018 +0000 (UTC) Info: stdin received from /dev/null
+Mon Apr 02 01:26:15 2018 +0000 (UTC) Info: stdout sent to /home/salcedop/211/HW/HW/Results/p1c/39265.output
+Mon Apr 02 01:26:15 2018 +0000 (UTC) Info: stderr sent to /home/salcedop/211/HW/HW/Results/p1c/39265.error
+Mon Apr 02 01:26:15 2018 +0000 (UTC) 
+Mon Apr 02 01:45:08 2018 +0000 (UTC) Info: task completed normally with an exit code of 0; initiating job cleanup and removal
