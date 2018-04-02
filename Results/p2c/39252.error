@@ -1,0 +1,60 @@
+/home/salcedop/openmc_org/openmc/openmc/material.py:538: UserWarning: A uranium enrichment of 8.0 was given for Material ID="1". OpenMC assumes the U234/U235 mass ratio is constant at 0.008, which is only valid at low enrichments. Consider setting the isotopic composition manually for enrichments over 5%.
+  warnings.warn(msg)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/material.py:538: UserWarning: A uranium enrichment of 8.0009 was given for Material ID="1". OpenMC assumes the U234/U235 mass ratio is constant at 0.008, which is only valid at low enrichments. Consider setting the isotopic composition manually for enrichments over 5%.
+  warnings.warn(msg)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/material.py:538: UserWarning: A uranium enrichment of 6.8706373967752095 was given for Material ID="1". OpenMC assumes the U234/U235 mass ratio is constant at 0.008, which is only valid at low enrichments. Consider setting the isotopic composition manually for enrichments over 5%.
+  warnings.warn(msg)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=1.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=2.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=3.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Cell instance already exists with id=4.
+  warn(msg, IDWarning)
+/home/salcedop/openmc_org/openmc/openmc/mixin.py:71: IDWarning: Another Material instance already exists with id=1.
+  warn(msg, IDWarning)
+Traceback (most recent call last):
+  File "/home/salcedop/211/HW/HW/Results/p2c/./HW4_P3.py", line 185, in <module>
+    tol=1.E-2,print_iterations=True)
+  File "/home/salcedop/openmc_org/openmc/openmc/search.py", line 195, in search_for_keff
+    zero_value = root_finder(**args)
+  File "/home/salcedop/miniconda3/lib/python3.6/site-packages/scipy/optimize/zeros.py", line 182, in newton
+    q1 = func(*((p1,) + args))
+  File "/home/salcedop/openmc_org/openmc/openmc/search.py", line 51, in _search_keff
+    model = model_builder(guess, **model_args)
+  File "/home/salcedop/211/HW/HW/Results/p2c/./HW4_P3.py", line 98, in build_second_model
+    uo2.add_element('U', 1.0, enrichment=enrichment)
+  File "/home/salcedop/openmc_org/openmc/openmc/material.py", line 529, in add_element
+    cv.check_greater_than('enrichment', enrichment, 0., equality=True)
+  File "/home/salcedop/openmc_org/openmc/openmc/checkvalue.py", line 234, in check_greater_than
+    raise ValueError(msg)
+ValueError: Unable to set "enrichment" to "-42.90465300931891" since it is less than "0.0"

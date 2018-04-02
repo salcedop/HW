@@ -1,0 +1,82 @@
+
+ =======================>     TALLY 33: LEAKAGE     <=======================
+
+ Cell 1
+   Total Material
+     Current                              6.91641        +/- 2.31804E-03
+ Cell 2
+   Total Material
+     Current                              14.1018        +/- 4.67046E-03
+ Cell 3
+   Total Material
+     Current                              14.9368        +/- 4.89235E-03
+ Cell 4
+   Total Material
+     Current                              187.545        +/- 6.65996E-02
+
+ ===================>     TALLY 34: THERMAL LEAKAGE     <===================
+
+ Cell 1
+   Incoming Energy [0.0, 0.625000)
+     Total Material
+       Current                              6.65562        +/- 2.29143E-03
+ Cell 2
+   Incoming Energy [0.0, 0.625000)
+     Total Material
+       Current                              12.5876        +/- 4.60677E-03
+ Cell 3
+   Incoming Energy [0.0, 0.625000)
+     Total Material
+       Current                              13.3958        +/- 4.82002E-03
+ Cell 4
+   Incoming Energy [0.0, 0.625000)
+     Total Material
+       Current                              182.543        +/- 6.64471E-02
+
+ ====================>     TALLY 35: FAST LEAKAGE     <=====================
+
+ Cell 1
+   Incoming Energy [0.625000, 2.00000E+07)
+     Total Material
+       Current                              0.260790       +/- 2.05430E-04
+ Cell 2
+   Incoming Energy [0.625000, 2.00000E+07)
+     Total Material
+       Current                              1.51426        +/- 4.08089E-04
+ Cell 3
+   Incoming Energy [0.625000, 2.00000E+07)
+     Total Material
+       Current                              1.54099        +/- 4.21955E-04
+ Cell 4
+   Incoming Energy [0.625000, 2.00000E+07)
+     Total Material
+       Current                              5.00218        +/- 8.67186E-04
+
+ ======================>     TALLY 36: FISS.RATE     <======================
+
+ Total Material
+   Nu-Fission Rate                      1.15638        +/- 4.22585E-04
+
+ ======================>     TALLY 37: ABS.RATE     <=======================
+
+ Total Material
+   Absorption Rate                      1.00400        +/- 3.55541E-04
+
+ ===================>     TALLY 38: THERM.ABS.RATE     <====================
+
+ Incoming Energy [0.0, 0.625000)
+   Total Material
+     Absorption Rate                      0.987810       +/- 3.58734E-04
+
+ ===================>     TALLY 39: THERM.FISS.RATE     <===================
+
+ Incoming Energy [0.0, 0.625000)
+   Total Material
+     Nu-Fission Rate                      1.14267        +/- 4.22591E-04
+
+ =================>     TALLY 40: FUEL.THERM.ABS.RATE     <=================
+
+ Incoming Energy [0.0, 0.625000)
+   Cell 1
+     Total Material
+       Absorption Rate                      0.856004       +/- 3.16460E-04

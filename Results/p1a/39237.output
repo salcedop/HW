@@ -1,0 +1,1054 @@
+
+                               %%%%%%%%%%%%%%%
+                          %%%%%%%%%%%%%%%%%%%%%%%%
+                       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                   %%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+               ##################     %%%%%%%%%%%%%%%%%%%%%%%
+               ###################     %%%%%%%%%%%%%%%%%%%%%%%
+               ####################     %%%%%%%%%%%%%%%%%%%%%%
+               #####################     %%%%%%%%%%%%%%%%%%%%%
+               ######################     %%%%%%%%%%%%%%%%%%%%
+               #######################     %%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%
+                 ####################     %%%%%%%%%%%%%%%%%
+                   #################     %%%%%%%%%%%%%%%%%
+                    ###############     %%%%%%%%%%%%%%%%
+                      ############     %%%%%%%%%%%%%%%
+                         ########     %%%%%%%%%%%%%%
+                                     %%%%%%%%%%%
+
+                   | The OpenMC Monte Carlo Code
+         Copyright | 2011-2018 Massachusetts Institute of Technology
+           License | http://openmc.readthedocs.io/en/latest/license.html
+           Version | 0.10.0
+          Git SHA1 | 52307037799ab7907eafcb91d7c1427f93de2c4a
+         Date/Time | 2018-04-01 17:17:29
+     MPI Processes | 2
+    OpenMP Threads | 56
+
+ Reading settings XML file...
+ Reading cross sections XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Building neighboring cells lists for each surface...
+ Reading U234 from /home/salcedop/openmc/data/nndc_hdf5/U234.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092234.h5
+ Reading U235 from /home/salcedop/openmc/data/nndc_hdf5/U235.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092235.h5
+ Reading U238 from /home/salcedop/openmc/data/nndc_hdf5/U238.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092238.h5
+ Reading O16 from /home/salcedop/openmc/data/nndc_hdf5/O16.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/008016.h5
+ Reading O17 from /home/salcedop/openmc/data/nndc_hdf5/O17.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/008017.h5
+ Reading Zr90 from /home/salcedop/openmc/data/nndc_hdf5/Zr90.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040090.h5
+ Reading Zr91 from /home/salcedop/openmc/data/nndc_hdf5/Zr91.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040091.h5
+ Reading Zr92 from /home/salcedop/openmc/data/nndc_hdf5/Zr92.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040092.h5
+ Reading Zr94 from /home/salcedop/openmc/data/nndc_hdf5/Zr94.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040094.h5
+ Reading Zr96 from /home/salcedop/openmc/data/nndc_hdf5/Zr96.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040096.h5
+ Reading H2 from /home/salcedop/openmc/data/nndc_hdf5/H2.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/001002.h5
+ Reading c_D_in_D2O from /home/salcedop/openmc/data/nndc_hdf5/c_D_in_D2O.h5
+ Maximum neutron transport energy: 2.00000E+07 eV for U235
+ Reading tallies XML file...
+ Writing summary.h5 file...
+ Initializing source particles...
+
+ ====================>     K EIGENVALUE SIMULATION     <====================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+        1/1    0.68131                       
+        2/1    0.67855                       
+        3/1    0.67331                       
+        4/1    0.67883                       
+        5/1    0.67796                       
+        6/1    0.67150                       
+        7/1    0.68158                       
+        8/1    0.68316                       
+        9/1    0.68017                       
+       10/1    0.67468                       
+       11/1    0.67627                       
+       12/1    0.68092                       
+       13/1    0.67331                       
+       14/1    0.67276                       
+       15/1    0.67467                       
+       16/1    0.67807                       
+       17/1    0.67023                       
+       18/1    0.68264                       
+       19/1    0.67444                       
+       20/1    0.66804                       
+       21/1    0.68116                       
+       22/1    0.67470                       
+       23/1    0.67937                       
+       24/1    0.67566                       
+       25/1    0.67873                       
+       26/1    0.68223                       
+       27/1    0.67479    0.67851 +/- 0.00372
+       28/1    0.67988    0.67897 +/- 0.00219
+       29/1    0.68170    0.67965 +/- 0.00169
+       30/1    0.66963    0.67765 +/- 0.00240
+       31/1    0.67478    0.67717 +/- 0.00201
+       32/1    0.68263    0.67795 +/- 0.00187
+       33/1    0.67522    0.67761 +/- 0.00166
+       34/1    0.67842    0.67770 +/- 0.00146
+       35/1    0.68219    0.67815 +/- 0.00138
+       36/1    0.67974    0.67829 +/- 0.00126
+       37/1    0.67797    0.67826 +/- 0.00115
+       38/1    0.67674    0.67815 +/- 0.00107
+       39/1    0.67618    0.67801 +/- 0.00100
+       40/1    0.67823    0.67802 +/- 0.00093
+       41/1    0.68141    0.67823 +/- 0.00089
+       42/1    0.68116    0.67841 +/- 0.00086
+       43/1    0.67819    0.67839 +/- 0.00081
+       44/1    0.68350    0.67866 +/- 0.00081
+       45/1    0.67931    0.67869 +/- 0.00077
+       46/1    0.68075    0.67879 +/- 0.00074
+       47/1    0.67936    0.67882 +/- 0.00070
+       48/1    0.67714    0.67874 +/- 0.00068
+       49/1    0.68118    0.67885 +/- 0.00066
+       50/1    0.68197    0.67897 +/- 0.00064
+       51/1    0.67417    0.67879 +/- 0.00064
+       52/1    0.67550    0.67866 +/- 0.00063
+       53/1    0.67948    0.67869 +/- 0.00061
+       54/1    0.67708    0.67864 +/- 0.00059
+       55/1    0.67656    0.67857 +/- 0.00057
+       56/1    0.67424    0.67843 +/- 0.00057
+       57/1    0.67297    0.67826 +/- 0.00058
+       58/1    0.67874    0.67827 +/- 0.00056
+       59/1    0.67896    0.67829 +/- 0.00055
+       60/1    0.67921    0.67832 +/- 0.00053
+       61/1    0.67715    0.67829 +/- 0.00052
+       62/1    0.67579    0.67822 +/- 0.00051
+       63/1    0.68063    0.67828 +/- 0.00050
+       64/1    0.67590    0.67822 +/- 0.00049
+       65/1    0.68222    0.67832 +/- 0.00049
+       66/1    0.67622    0.67827 +/- 0.00048
+       67/1    0.67556    0.67821 +/- 0.00047
+       68/1    0.67681    0.67817 +/- 0.00046
+       69/1    0.68007    0.67822 +/- 0.00045
+       70/1    0.67924    0.67824 +/- 0.00044
+       71/1    0.68000    0.67828 +/- 0.00043
+       72/1    0.68118    0.67834 +/- 0.00043
+       73/1    0.67944    0.67836 +/- 0.00042
+       74/1    0.67881    0.67837 +/- 0.00041
+       75/1    0.67672    0.67834 +/- 0.00041
+       76/1    0.67774    0.67833 +/- 0.00040
+       77/1    0.67710    0.67830 +/- 0.00039
+       78/1    0.67566    0.67825 +/- 0.00039
+       79/1    0.67445    0.67818 +/- 0.00039
+       80/1    0.67341    0.67810 +/- 0.00039
+       81/1    0.67666    0.67807 +/- 0.00038
+       82/1    0.68002    0.67810 +/- 0.00038
+       83/1    0.67765    0.67810 +/- 0.00037
+       84/1    0.68137    0.67815 +/- 0.00037
+       85/1    0.67894    0.67817 +/- 0.00036
+       86/1    0.67964    0.67819 +/- 0.00036
+       87/1    0.67832    0.67819 +/- 0.00035
+       88/1    0.68586    0.67831 +/- 0.00037
+       89/1    0.67695    0.67829 +/- 0.00036
+       90/1    0.67734    0.67828 +/- 0.00036
+       91/1    0.68247    0.67834 +/- 0.00036
+       92/1    0.68039    0.67837 +/- 0.00035
+       93/1    0.67237    0.67828 +/- 0.00036
+       94/1    0.67963    0.67830 +/- 0.00035
+       95/1    0.67921    0.67832 +/- 0.00035
+       96/1    0.68108    0.67835 +/- 0.00035
+       97/1    0.67256    0.67827 +/- 0.00035
+       98/1    0.67904    0.67828 +/- 0.00035
+       99/1    0.68153    0.67833 +/- 0.00034
+      100/1    0.67405    0.67827 +/- 0.00034
+ Creating state point statepoint.100.h5...
+
+ =======================>     TIMING STATISTICS     <=======================
+
+ Total time for initialization     =  6.8764E+00 seconds
+   Reading cross sections          =  6.7347E+00 seconds
+ Total time in simulation          =  1.6153E+02 seconds
+   Time in transport only          =  1.6088E+02 seconds
+   Time in inactive batches        =  7.8404E+00 seconds
+   Time in active batches          =  1.5369E+02 seconds
+   Time synchronizing fission bank =  2.5114E-01 seconds
+     Sampling source sites         =  1.0697E-01 seconds
+     SEND/RECV source sites        =  3.6484E-02 seconds
+   Time accumulating tallies       =  1.5028E-03 seconds
+ Total time for finalization       =  2.1392E-03 seconds
+ Total time elapsed                =  1.6872E+02 seconds
+ Calculation Rate (inactive)       =  3.18863E+05 neutrons/second
+ Calculation Rate (active)         =  48799.8 neutrons/second
+
+ ============================>     RESULTS     <============================
+
+ k-effective (Collision)     =  0.67858 +/-  0.00033
+ k-effective (Track-length)  =  0.67827 +/-  0.00034
+ k-effective (Absorption)    =  0.67766 +/-  0.00033
+ Combined k-effective        =  0.67796 +/-  0.00029
+ Leakage Fraction            =  0.00000 +/-  0.00000
+
+
+                               %%%%%%%%%%%%%%%
+                          %%%%%%%%%%%%%%%%%%%%%%%%
+                       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                   %%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+               ##################     %%%%%%%%%%%%%%%%%%%%%%%
+               ###################     %%%%%%%%%%%%%%%%%%%%%%%
+               ####################     %%%%%%%%%%%%%%%%%%%%%%
+               #####################     %%%%%%%%%%%%%%%%%%%%%
+               ######################     %%%%%%%%%%%%%%%%%%%%
+               #######################     %%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%
+                 ####################     %%%%%%%%%%%%%%%%%
+                   #################     %%%%%%%%%%%%%%%%%
+                    ###############     %%%%%%%%%%%%%%%%
+                      ############     %%%%%%%%%%%%%%%
+                         ########     %%%%%%%%%%%%%%
+                                     %%%%%%%%%%%
+
+                   | The OpenMC Monte Carlo Code
+         Copyright | 2011-2018 Massachusetts Institute of Technology
+           License | http://openmc.readthedocs.io/en/latest/license.html
+           Version | 0.10.0
+          Git SHA1 | 52307037799ab7907eafcb91d7c1427f93de2c4a
+         Date/Time | 2018-04-01 17:20:18
+     MPI Processes | 2
+    OpenMP Threads | 56
+
+ Reading settings XML file...
+ Reading cross sections XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Building neighboring cells lists for each surface...
+ Reading U234 from /home/salcedop/openmc/data/nndc_hdf5/U234.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092234.h5
+ Reading U235 from /home/salcedop/openmc/data/nndc_hdf5/U235.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092235.h5
+ Reading U238 from /home/salcedop/openmc/data/nndc_hdf5/U238.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092238.h5
+ Reading O16 from /home/salcedop/openmc/data/nndc_hdf5/O16.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/008016.h5
+ Reading O17 from /home/salcedop/openmc/data/nndc_hdf5/O17.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/008017.h5
+ Reading Zr90 from /home/salcedop/openmc/data/nndc_hdf5/Zr90.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040090.h5
+ Reading Zr91 from /home/salcedop/openmc/data/nndc_hdf5/Zr91.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040091.h5
+ Reading Zr92 from /home/salcedop/openmc/data/nndc_hdf5/Zr92.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040092.h5
+ Reading Zr94 from /home/salcedop/openmc/data/nndc_hdf5/Zr94.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040094.h5
+ Reading Zr96 from /home/salcedop/openmc/data/nndc_hdf5/Zr96.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040096.h5
+ Reading H2 from /home/salcedop/openmc/data/nndc_hdf5/H2.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/001002.h5
+ Reading c_D_in_D2O from /home/salcedop/openmc/data/nndc_hdf5/c_D_in_D2O.h5
+ Maximum neutron transport energy: 2.00000E+07 eV for U235
+ Reading tallies XML file...
+ Writing summary.h5 file...
+ Initializing source particles...
+
+ ====================>     K EIGENVALUE SIMULATION     <====================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+        1/1    1.24318                       
+        2/1    1.24286                       
+        3/1    1.24614                       
+        4/1    1.24815                       
+        5/1    1.24749                       
+        6/1    1.23733                       
+        7/1    1.24058                       
+        8/1    1.23852                       
+        9/1    1.23933                       
+       10/1    1.24593                       
+       11/1    1.24578                       
+       12/1    1.24704                       
+       13/1    1.24040                       
+       14/1    1.24199                       
+       15/1    1.24567                       
+       16/1    1.24302                       
+       17/1    1.24233                       
+       18/1    1.24616                       
+       19/1    1.23605                       
+       20/1    1.24146                       
+       21/1    1.23964                       
+       22/1    1.24816                       
+       23/1    1.24032                       
+       24/1    1.24465                       
+       25/1    1.24471                       
+       26/1    1.24698                       
+       27/1    1.24253    1.24475 +/- 0.00223
+       28/1    1.24753    1.24568 +/- 0.00158
+       29/1    1.25067    1.24693 +/- 0.00168
+       30/1    1.23781    1.24510 +/- 0.00224
+       31/1    1.24403    1.24493 +/- 0.00184
+       32/1    1.24505    1.24494 +/- 0.00155
+       33/1    1.24594    1.24507 +/- 0.00135
+       34/1    1.24458    1.24501 +/- 0.00119
+       35/1    1.24076    1.24459 +/- 0.00115
+       36/1    1.24646    1.24476 +/- 0.00105
+       37/1    1.23912    1.24429 +/- 0.00107
+       38/1    1.24418    1.24428 +/- 0.00098
+       39/1    1.24852    1.24458 +/- 0.00096
+       40/1    1.24256    1.24445 +/- 0.00090
+       41/1    1.24708    1.24461 +/- 0.00086
+       42/1    1.24331    1.24454 +/- 0.00081
+       43/1    1.24356    1.24448 +/- 0.00077
+       44/1    1.23813    1.24415 +/- 0.00080
+       45/1    1.23543    1.24371 +/- 0.00087
+       46/1    1.24414    1.24373 +/- 0.00083
+       47/1    1.23908    1.24352 +/- 0.00082
+       48/1    1.23596    1.24319 +/- 0.00085
+       49/1    1.25139    1.24353 +/- 0.00088
+       50/1    1.24866    1.24374 +/- 0.00087
+       51/1    1.24815    1.24391 +/- 0.00085
+       52/1    1.23916    1.24373 +/- 0.00084
+       53/1    1.24249    1.24369 +/- 0.00081
+       54/1    1.24047    1.24358 +/- 0.00079
+       55/1    1.23957    1.24344 +/- 0.00078
+       56/1    1.23695    1.24323 +/- 0.00078
+       57/1    1.23772    1.24306 +/- 0.00077
+       58/1    1.24229    1.24304 +/- 0.00075
+       59/1    1.24248    1.24302 +/- 0.00073
+       60/1    1.24101    1.24296 +/- 0.00071
+       61/1    1.24488    1.24302 +/- 0.00069
+       62/1    1.24180    1.24298 +/- 0.00067
+       63/1    1.25139    1.24321 +/- 0.00069
+       64/1    1.24370    1.24322 +/- 0.00067
+       65/1    1.24241    1.24320 +/- 0.00066
+       66/1    1.24618    1.24327 +/- 0.00064
+       67/1    1.24370    1.24328 +/- 0.00063
+       68/1    1.24543    1.24333 +/- 0.00062
+       69/1    1.24378    1.24334 +/- 0.00060
+       70/1    1.24509    1.24338 +/- 0.00059
+       71/1    1.24508    1.24342 +/- 0.00058
+       72/1    1.24864    1.24353 +/- 0.00058
+       73/1    1.24220    1.24350 +/- 0.00057
+       74/1    1.24951    1.24362 +/- 0.00057
+       75/1    1.23711    1.24349 +/- 0.00057
+       76/1    1.24502    1.24352 +/- 0.00056
+       77/1    1.24093    1.24347 +/- 0.00055
+       78/1    1.24764    1.24355 +/- 0.00055
+       79/1    1.23913    1.24347 +/- 0.00054
+       80/1    1.24344    1.24347 +/- 0.00053
+       81/1    1.24251    1.24345 +/- 0.00052
+       82/1    1.24067    1.24340 +/- 0.00052
+       83/1    1.23589    1.24327 +/- 0.00052
+       84/1    1.24244    1.24326 +/- 0.00052
+       85/1    1.24815    1.24334 +/- 0.00051
+       86/1    1.24047    1.24329 +/- 0.00051
+       87/1    1.24670    1.24335 +/- 0.00050
+       88/1    1.24692    1.24341 +/- 0.00050
+       89/1    1.24308    1.24340 +/- 0.00049
+       90/1    1.24944    1.24349 +/- 0.00049
+       91/1    1.24008    1.24344 +/- 0.00049
+       92/1    1.24686    1.24349 +/- 0.00048
+       93/1    1.24629    1.24353 +/- 0.00048
+       94/1    1.24260    1.24352 +/- 0.00047
+       95/1    1.24418    1.24353 +/- 0.00046
+       96/1    1.24658    1.24357 +/- 0.00046
+       97/1    1.25069    1.24367 +/- 0.00046
+       98/1    1.24962    1.24375 +/- 0.00046
+       99/1    1.24728    1.24380 +/- 0.00046
+      100/1    1.25059    1.24389 +/- 0.00046
+ Creating state point statepoint.100.h5...
+
+ =======================>     TIMING STATISTICS     <=======================
+
+ Total time for initialization     =  6.3506E+00 seconds
+   Reading cross sections          =  6.2104E+00 seconds
+ Total time in simulation          =  3.4210E+02 seconds
+   Time in transport only          =  3.3549E+02 seconds
+   Time in inactive batches        =  1.4581E+01 seconds
+   Time in active batches          =  3.2752E+02 seconds
+   Time synchronizing fission bank =  6.1863E-01 seconds
+     Sampling source sites         =  1.0198E-01 seconds
+     SEND/RECV source sites        =  3.4891E-02 seconds
+   Time accumulating tallies       =  1.4434E-03 seconds
+ Total time for finalization       =  2.1046E-03 seconds
+ Total time elapsed                =  3.4869E+02 seconds
+ Calculation Rate (inactive)       =  1.71455E+05 neutrons/second
+ Calculation Rate (active)         =  22899.7 neutrons/second
+
+ ============================>     RESULTS     <============================
+
+ k-effective (Collision)     =  1.24414 +/-  0.00038
+ k-effective (Track-length)  =  1.24389 +/-  0.00046
+ k-effective (Absorption)    =  1.24460 +/-  0.00038
+ Combined k-effective        =  1.24436 +/-  0.00029
+ Leakage Fraction            =  0.00000 +/-  0.00000
+
+
+                               %%%%%%%%%%%%%%%
+                          %%%%%%%%%%%%%%%%%%%%%%%%
+                       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                   %%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+               ##################     %%%%%%%%%%%%%%%%%%%%%%%
+               ###################     %%%%%%%%%%%%%%%%%%%%%%%
+               ####################     %%%%%%%%%%%%%%%%%%%%%%
+               #####################     %%%%%%%%%%%%%%%%%%%%%
+               ######################     %%%%%%%%%%%%%%%%%%%%
+               #######################     %%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%
+                 ####################     %%%%%%%%%%%%%%%%%
+                   #################     %%%%%%%%%%%%%%%%%
+                    ###############     %%%%%%%%%%%%%%%%
+                      ############     %%%%%%%%%%%%%%%
+                         ########     %%%%%%%%%%%%%%
+                                     %%%%%%%%%%%
+
+                   | The OpenMC Monte Carlo Code
+         Copyright | 2011-2018 Massachusetts Institute of Technology
+           License | http://openmc.readthedocs.io/en/latest/license.html
+           Version | 0.10.0
+          Git SHA1 | 52307037799ab7907eafcb91d7c1427f93de2c4a
+         Date/Time | 2018-04-01 17:26:07
+     MPI Processes | 2
+    OpenMP Threads | 56
+
+ Reading settings XML file...
+ Reading cross sections XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Building neighboring cells lists for each surface...
+ Reading U234 from /home/salcedop/openmc/data/nndc_hdf5/U234.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092234.h5
+ Reading U235 from /home/salcedop/openmc/data/nndc_hdf5/U235.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092235.h5
+ Reading U238 from /home/salcedop/openmc/data/nndc_hdf5/U238.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092238.h5
+ Reading O16 from /home/salcedop/openmc/data/nndc_hdf5/O16.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/008016.h5
+ Reading O17 from /home/salcedop/openmc/data/nndc_hdf5/O17.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/008017.h5
+ Reading Zr90 from /home/salcedop/openmc/data/nndc_hdf5/Zr90.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040090.h5
+ Reading Zr91 from /home/salcedop/openmc/data/nndc_hdf5/Zr91.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040091.h5
+ Reading Zr92 from /home/salcedop/openmc/data/nndc_hdf5/Zr92.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040092.h5
+ Reading Zr94 from /home/salcedop/openmc/data/nndc_hdf5/Zr94.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040094.h5
+ Reading Zr96 from /home/salcedop/openmc/data/nndc_hdf5/Zr96.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040096.h5
+ Reading H2 from /home/salcedop/openmc/data/nndc_hdf5/H2.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/001002.h5
+ Reading c_D_in_D2O from /home/salcedop/openmc/data/nndc_hdf5/c_D_in_D2O.h5
+ Maximum neutron transport energy: 2.00000E+07 eV for U235
+ Reading tallies XML file...
+ Writing summary.h5 file...
+ Initializing source particles...
+
+ ====================>     K EIGENVALUE SIMULATION     <====================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+        1/1    1.25118                       
+        2/1    1.25304                       
+        3/1    1.24563                       
+        4/1    1.25412                       
+        5/1    1.25772                       
+        6/1    1.25630                       
+        7/1    1.26023                       
+        8/1    1.25451                       
+        9/1    1.24931                       
+       10/1    1.24867                       
+       11/1    1.25385                       
+       12/1    1.25495                       
+       13/1    1.25085                       
+       14/1    1.25603                       
+       15/1    1.25519                       
+       16/1    1.25395                       
+       17/1    1.25468                       
+       18/1    1.25403                       
+       19/1    1.25118                       
+       20/1    1.25261                       
+       21/1    1.25065                       
+       22/1    1.24688                       
+       23/1    1.25509                       
+       24/1    1.25268                       
+       25/1    1.25295                       
+       26/1    1.25768                       
+       27/1    1.24847    1.25308 +/- 0.00461
+       28/1    1.24886    1.25167 +/- 0.00301
+       29/1    1.25261    1.25191 +/- 0.00214
+       30/1    1.25067    1.25166 +/- 0.00168
+       31/1    1.24977    1.25134 +/- 0.00140
+       32/1    1.25630    1.25205 +/- 0.00138
+       33/1    1.25561    1.25250 +/- 0.00128
+       34/1    1.25288    1.25254 +/- 0.00113
+       35/1    1.25401    1.25269 +/- 0.00102
+       36/1    1.24615    1.25209 +/- 0.00110
+       37/1    1.25105    1.25201 +/- 0.00100
+       38/1    1.25187    1.25200 +/- 0.00092
+       39/1    1.25059    1.25189 +/- 0.00086
+       40/1    1.25234    1.25192 +/- 0.00080
+       41/1    1.25595    1.25218 +/- 0.00079
+       42/1    1.25904    1.25258 +/- 0.00085
+       43/1    1.25362    1.25264 +/- 0.00080
+       44/1    1.25175    1.25259 +/- 0.00076
+       45/1    1.25368    1.25265 +/- 0.00072
+       46/1    1.25446    1.25273 +/- 0.00069
+       47/1    1.25954    1.25304 +/- 0.00073
+       48/1    1.25107    1.25296 +/- 0.00070
+       49/1    1.25813    1.25317 +/- 0.00070
+       50/1    1.24287    1.25276 +/- 0.00079
+       51/1    1.25867    1.25299 +/- 0.00079
+       52/1    1.25126    1.25292 +/- 0.00077
+       53/1    1.25320    1.25293 +/- 0.00074
+       54/1    1.26034    1.25319 +/- 0.00076
+       55/1    1.24968    1.25307 +/- 0.00074
+       56/1    1.25006    1.25297 +/- 0.00072
+       57/1    1.25545    1.25305 +/- 0.00070
+       58/1    1.25402    1.25308 +/- 0.00068
+       59/1    1.24864    1.25295 +/- 0.00068
+       60/1    1.25760    1.25308 +/- 0.00067
+       61/1    1.25426    1.25312 +/- 0.00065
+       62/1    1.25406    1.25314 +/- 0.00063
+       63/1    1.25601    1.25322 +/- 0.00062
+       64/1    1.25879    1.25336 +/- 0.00062
+       65/1    1.24815    1.25323 +/- 0.00062
+       66/1    1.25599    1.25330 +/- 0.00061
+       67/1    1.24795    1.25317 +/- 0.00061
+       68/1    1.24622    1.25301 +/- 0.00061
+       69/1    1.25014    1.25294 +/- 0.00060
+       70/1    1.24639    1.25280 +/- 0.00061
+       71/1    1.24791    1.25269 +/- 0.00060
+       72/1    1.26095    1.25287 +/- 0.00062
+       73/1    1.25420    1.25289 +/- 0.00060
+       74/1    1.25229    1.25288 +/- 0.00059
+       75/1    1.25075    1.25284 +/- 0.00058
+       76/1    1.25795    1.25294 +/- 0.00058
+       77/1    1.25450    1.25297 +/- 0.00057
+       78/1    1.25689    1.25304 +/- 0.00056
+       79/1    1.25200    1.25302 +/- 0.00055
+       80/1    1.25394    1.25304 +/- 0.00054
+       81/1    1.25716    1.25311 +/- 0.00054
+       82/1    1.25982    1.25323 +/- 0.00054
+       83/1    1.24942    1.25317 +/- 0.00054
+       84/1    1.25554    1.25321 +/- 0.00053
+       85/1    1.25236    1.25319 +/- 0.00052
+       86/1    1.25280    1.25319 +/- 0.00051
+       87/1    1.25691    1.25325 +/- 0.00051
+       88/1    1.25338    1.25325 +/- 0.00050
+       89/1    1.25845    1.25333 +/- 0.00050
+       90/1    1.25352    1.25333 +/- 0.00049
+       91/1    1.25679    1.25338 +/- 0.00048
+       92/1    1.25248    1.25337 +/- 0.00048
+       93/1    1.25637    1.25342 +/- 0.00047
+       94/1    1.26018    1.25351 +/- 0.00048
+       95/1    1.25090    1.25348 +/- 0.00047
+       96/1    1.25803    1.25354 +/- 0.00047
+       97/1    1.24912    1.25348 +/- 0.00047
+       98/1    1.25965    1.25356 +/- 0.00047
+       99/1    1.24907    1.25350 +/- 0.00046
+      100/1    1.25638    1.25354 +/- 0.00046
+ Creating state point statepoint.100.h5...
+
+ =======================>     TIMING STATISTICS     <=======================
+
+ Total time for initialization     =  5.3917E+00 seconds
+   Reading cross sections          =  5.2201E+00 seconds
+ Total time in simulation          =  6.0659E+02 seconds
+   Time in transport only          =  6.0029E+02 seconds
+   Time in inactive batches        =  2.3939E+01 seconds
+   Time in active batches          =  5.8265E+02 seconds
+   Time synchronizing fission bank =  1.4137E-01 seconds
+     Sampling source sites         =  1.0527E-01 seconds
+     SEND/RECV source sites        =  3.4809E-02 seconds
+   Time accumulating tallies       =  1.4013E-03 seconds
+ Total time for finalization       =  1.4386E-02 seconds
+ Total time elapsed                =  6.1219E+02 seconds
+ Calculation Rate (inactive)       =  1.04433E+05 neutrons/second
+ Calculation Rate (active)         =  12872.3 neutrons/second
+
+ ============================>     RESULTS     <============================
+
+ k-effective (Collision)     =  1.25336 +/-  0.00040
+ k-effective (Track-length)  =  1.25354 +/-  0.00046
+ k-effective (Absorption)    =  1.25316 +/-  0.00037
+ Combined k-effective        =  1.25328 +/-  0.00029
+ Leakage Fraction            =  0.00000 +/-  0.00000
+
+
+                               %%%%%%%%%%%%%%%
+                          %%%%%%%%%%%%%%%%%%%%%%%%
+                       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                   %%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+               ##################     %%%%%%%%%%%%%%%%%%%%%%%
+               ###################     %%%%%%%%%%%%%%%%%%%%%%%
+               ####################     %%%%%%%%%%%%%%%%%%%%%%
+               #####################     %%%%%%%%%%%%%%%%%%%%%
+               ######################     %%%%%%%%%%%%%%%%%%%%
+               #######################     %%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%
+                 ####################     %%%%%%%%%%%%%%%%%
+                   #################     %%%%%%%%%%%%%%%%%
+                    ###############     %%%%%%%%%%%%%%%%
+                      ############     %%%%%%%%%%%%%%%
+                         ########     %%%%%%%%%%%%%%
+                                     %%%%%%%%%%%
+
+                   | The OpenMC Monte Carlo Code
+         Copyright | 2011-2018 Massachusetts Institute of Technology
+           License | http://openmc.readthedocs.io/en/latest/license.html
+           Version | 0.10.0
+          Git SHA1 | 52307037799ab7907eafcb91d7c1427f93de2c4a
+         Date/Time | 2018-04-01 17:36:19
+     MPI Processes | 2
+    OpenMP Threads | 56
+
+ Reading settings XML file...
+ Reading cross sections XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Building neighboring cells lists for each surface...
+ Reading U234 from /home/salcedop/openmc/data/nndc_hdf5/U234.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092234.h5
+ Reading U235 from /home/salcedop/openmc/data/nndc_hdf5/U235.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092235.h5
+ Reading U238 from /home/salcedop/openmc/data/nndc_hdf5/U238.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092238.h5
+ Reading O16 from /home/salcedop/openmc/data/nndc_hdf5/O16.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/008016.h5
+ Reading O17 from /home/salcedop/openmc/data/nndc_hdf5/O17.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/008017.h5
+ Reading Zr90 from /home/salcedop/openmc/data/nndc_hdf5/Zr90.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040090.h5
+ Reading Zr91 from /home/salcedop/openmc/data/nndc_hdf5/Zr91.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040091.h5
+ Reading Zr92 from /home/salcedop/openmc/data/nndc_hdf5/Zr92.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040092.h5
+ Reading Zr94 from /home/salcedop/openmc/data/nndc_hdf5/Zr94.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040094.h5
+ Reading Zr96 from /home/salcedop/openmc/data/nndc_hdf5/Zr96.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040096.h5
+ Reading H2 from /home/salcedop/openmc/data/nndc_hdf5/H2.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/001002.h5
+ Reading c_D_in_D2O from /home/salcedop/openmc/data/nndc_hdf5/c_D_in_D2O.h5
+ Maximum neutron transport energy: 2.00000E+07 eV for U235
+ Reading tallies XML file...
+ Writing summary.h5 file...
+ Initializing source particles...
+
+ ====================>     K EIGENVALUE SIMULATION     <====================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+        1/1    1.21833                       
+        2/1    1.22034                       
+        3/1    1.21956                       
+        4/1    1.22213                       
+        5/1    1.21773                       
+        6/1    1.21674                       
+        7/1    1.22093                       
+        8/1    1.21938                       
+        9/1    1.21971                       
+       10/1    1.21623                       
+       11/1    1.22238                       
+       12/1    1.21571                       
+       13/1    1.21748                       
+       14/1    1.21732                       
+       15/1    1.22332                       
+       16/1    1.22324                       
+       17/1    1.21796                       
+       18/1    1.21876                       
+       19/1    1.21132                       
+       20/1    1.21910                       
+       21/1    1.21751                       
+       22/1    1.21977                       
+       23/1    1.22001                       
+       24/1    1.21957                       
+       25/1    1.21850                       
+       26/1    1.21458                       
+       27/1    1.22031    1.21745 +/- 0.00286
+       28/1    1.21353    1.21614 +/- 0.00211
+       29/1    1.22416    1.21815 +/- 0.00250
+       30/1    1.21898    1.21831 +/- 0.00194
+       31/1    1.21351    1.21751 +/- 0.00178
+       32/1    1.21636    1.21735 +/- 0.00151
+       33/1    1.21244    1.21673 +/- 0.00145
+       34/1    1.21161    1.21616 +/- 0.00140
+       35/1    1.21954    1.21650 +/- 0.00129
+       36/1    1.21638    1.21649 +/- 0.00117
+       37/1    1.21554    1.21641 +/- 0.00107
+       38/1    1.22389    1.21699 +/- 0.00114
+       39/1    1.21164    1.21660 +/- 0.00112
+       40/1    1.21840    1.21672 +/- 0.00105
+       41/1    1.21677    1.21673 +/- 0.00098
+       42/1    1.21777    1.21679 +/- 0.00093
+       43/1    1.22342    1.21716 +/- 0.00095
+       44/1    1.21921    1.21727 +/- 0.00090
+       45/1    1.21834    1.21732 +/- 0.00086
+       46/1    1.21667    1.21729 +/- 0.00082
+       47/1    1.20961    1.21694 +/- 0.00085
+       48/1    1.21636    1.21691 +/- 0.00082
+       49/1    1.21929    1.21701 +/- 0.00079
+       50/1    1.21610    1.21698 +/- 0.00076
+       51/1    1.21884    1.21705 +/- 0.00073
+       52/1    1.21431    1.21695 +/- 0.00071
+       53/1    1.20968    1.21669 +/- 0.00073
+       54/1    1.22149    1.21685 +/- 0.00073
+       55/1    1.21154    1.21668 +/- 0.00072
+       56/1    1.22252    1.21686 +/- 0.00072
+       57/1    1.22013    1.21697 +/- 0.00071
+       58/1    1.22260    1.21714 +/- 0.00071
+       59/1    1.21939    1.21720 +/- 0.00069
+       60/1    1.21659    1.21719 +/- 0.00067
+       61/1    1.21948    1.21725 +/- 0.00065
+       62/1    1.21627    1.21722 +/- 0.00064
+       63/1    1.21977    1.21729 +/- 0.00062
+       64/1    1.22280    1.21743 +/- 0.00062
+       65/1    1.21410    1.21735 +/- 0.00061
+       66/1    1.21588    1.21731 +/- 0.00060
+       67/1    1.21793    1.21733 +/- 0.00058
+       68/1    1.21304    1.21723 +/- 0.00058
+       69/1    1.21805    1.21725 +/- 0.00057
+       70/1    1.21110    1.21711 +/- 0.00057
+       71/1    1.21878    1.21715 +/- 0.00056
+       72/1    1.21490    1.21710 +/- 0.00055
+       73/1    1.21237    1.21700 +/- 0.00055
+       74/1    1.20602    1.21677 +/- 0.00058
+       75/1    1.21587    1.21676 +/- 0.00057
+       76/1    1.21714    1.21676 +/- 0.00056
+       77/1    1.21979    1.21682 +/- 0.00055
+       78/1    1.21573    1.21680 +/- 0.00054
+       79/1    1.22375    1.21693 +/- 0.00055
+       80/1    1.21774    1.21695 +/- 0.00054
+       81/1    1.21092    1.21684 +/- 0.00054
+       82/1    1.21496    1.21680 +/- 0.00053
+       83/1    1.22120    1.21688 +/- 0.00052
+       84/1    1.21302    1.21682 +/- 0.00052
+       85/1    1.21363    1.21676 +/- 0.00051
+       86/1    1.21587    1.21675 +/- 0.00051
+       87/1    1.21549    1.21673 +/- 0.00050
+       88/1    1.21508    1.21670 +/- 0.00049
+       89/1    1.20903    1.21658 +/- 0.00050
+       90/1    1.22101    1.21665 +/- 0.00049
+       91/1    1.21961    1.21669 +/- 0.00049
+       92/1    1.22116    1.21676 +/- 0.00049
+       93/1    1.22358    1.21686 +/- 0.00049
+       94/1    1.21516    1.21684 +/- 0.00048
+       95/1    1.21741    1.21684 +/- 0.00048
+       96/1    1.21516    1.21682 +/- 0.00047
+       97/1    1.21745    1.21683 +/- 0.00046
+       98/1    1.21434    1.21680 +/- 0.00046
+       99/1    1.21759    1.21681 +/- 0.00045
+      100/1    1.21790    1.21682 +/- 0.00045
+ Creating state point statepoint.100.h5...
+
+ =======================>     TIMING STATISTICS     <=======================
+
+ Total time for initialization     =  7.3334E+00 seconds
+   Reading cross sections          =  7.1827E+00 seconds
+ Total time in simulation          =  1.1994E+03 seconds
+   Time in transport only          =  1.1928E+03 seconds
+   Time in inactive batches        =  4.6630E+01 seconds
+   Time in active batches          =  1.1527E+03 seconds
+   Time synchronizing fission bank =  5.5071E-01 seconds
+     Sampling source sites         =  1.0208E-01 seconds
+     SEND/RECV source sites        =  3.7325E-02 seconds
+   Time accumulating tallies       =  1.4542E-03 seconds
+ Total time for finalization       =  1.4019E-02 seconds
+ Total time elapsed                =  1.2070E+03 seconds
+ Calculation Rate (inactive)       =  53613.5 neutrons/second
+ Calculation Rate (active)         =  6506.21 neutrons/second
+
+ ============================>     RESULTS     <============================
+
+ k-effective (Collision)     =  1.21725 +/-  0.00038
+ k-effective (Track-length)  =  1.21682 +/-  0.00045
+ k-effective (Absorption)    =  1.21804 +/-  0.00042
+ Combined k-effective        =  1.21763 +/-  0.00031
+ Leakage Fraction            =  0.00000 +/-  0.00000
+
+
+                               %%%%%%%%%%%%%%%
+                          %%%%%%%%%%%%%%%%%%%%%%%%
+                       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                   %%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+               ##################     %%%%%%%%%%%%%%%%%%%%%%%
+               ###################     %%%%%%%%%%%%%%%%%%%%%%%
+               ####################     %%%%%%%%%%%%%%%%%%%%%%
+               #####################     %%%%%%%%%%%%%%%%%%%%%
+               ######################     %%%%%%%%%%%%%%%%%%%%
+               #######################     %%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%
+                 ####################     %%%%%%%%%%%%%%%%%
+                   #################     %%%%%%%%%%%%%%%%%
+                    ###############     %%%%%%%%%%%%%%%%
+                      ############     %%%%%%%%%%%%%%%
+                         ########     %%%%%%%%%%%%%%
+                                     %%%%%%%%%%%
+
+                   | The OpenMC Monte Carlo Code
+         Copyright | 2011-2018 Massachusetts Institute of Technology
+           License | http://openmc.readthedocs.io/en/latest/license.html
+           Version | 0.10.0
+          Git SHA1 | 52307037799ab7907eafcb91d7c1427f93de2c4a
+         Date/Time | 2018-04-01 17:56:26
+     MPI Processes | 2
+    OpenMP Threads | 56
+
+ Reading settings XML file...
+ Reading cross sections XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Building neighboring cells lists for each surface...
+ Reading U234 from /home/salcedop/openmc/data/nndc_hdf5/U234.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092234.h5
+ Reading U235 from /home/salcedop/openmc/data/nndc_hdf5/U235.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092235.h5
+ Reading U238 from /home/salcedop/openmc/data/nndc_hdf5/U238.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/092238.h5
+ Reading O16 from /home/salcedop/openmc/data/nndc_hdf5/O16.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/008016.h5
+ Reading O17 from /home/salcedop/openmc/data/nndc_hdf5/O17.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/008017.h5
+ Reading Zr90 from /home/salcedop/openmc/data/nndc_hdf5/Zr90.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040090.h5
+ Reading Zr91 from /home/salcedop/openmc/data/nndc_hdf5/Zr91.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040091.h5
+ Reading Zr92 from /home/salcedop/openmc/data/nndc_hdf5/Zr92.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040092.h5
+ Reading Zr94 from /home/salcedop/openmc/data/nndc_hdf5/Zr94.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040094.h5
+ Reading Zr96 from /home/salcedop/openmc/data/nndc_hdf5/Zr96.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/040096.h5
+ Reading H2 from /home/salcedop/openmc/data/nndc_hdf5/H2.h5
+ Loading Multipole XS table:
+ /home/salcedop/wmp_data_vector_fitting/Windowed_Multipole_Library_v0.3/001002.h5
+ Reading c_D_in_D2O from /home/salcedop/openmc/data/nndc_hdf5/c_D_in_D2O.h5
+ Maximum neutron transport energy: 2.00000E+07 eV for U235
+ Reading tallies XML file...
+ Writing summary.h5 file...
+ Initializing source particles...
+
+ ====================>     K EIGENVALUE SIMULATION     <====================
+
+  Bat./Gen.      k            Average k         
+  =========   ========   ====================   
+        1/1    1.15389                       
+        2/1    1.15100                       
+        3/1    1.15174                       
+        4/1    1.15586                       
+        5/1    1.15464                       
+        6/1    1.15091                       
+        7/1    1.15107                       
+        8/1    1.15767                       
+        9/1    1.15867                       
+       10/1    1.15570                       
+       11/1    1.15535                       
+       12/1    1.15280                       
+       13/1    1.15519                       
+       14/1    1.15548                       
+       15/1    1.15864                       
+       16/1    1.15271                       
+       17/1    1.15620                       
+       18/1    1.15613                       
+       19/1    1.16421                       
+       20/1    1.16025                       
+       21/1    1.15266                       
+       22/1    1.15704                       
+       23/1    1.15818                       
+       24/1    1.15640                       
+       25/1    1.15246                       
+       26/1    1.15625                       
+       27/1    1.15695    1.15660 +/- 0.00035
+       28/1    1.15388    1.15569 +/- 0.00093
+       29/1    1.15198    1.15476 +/- 0.00114
+       30/1    1.15423    1.15466 +/- 0.00089
+       31/1    1.15350    1.15446 +/- 0.00075
+       32/1    1.15615    1.15471 +/- 0.00068
+       33/1    1.15557    1.15481 +/- 0.00060
+       34/1    1.15837    1.15521 +/- 0.00066
+       35/1    1.15489    1.15518 +/- 0.00059
+       36/1    1.15668    1.15531 +/- 0.00055
+       37/1    1.14551    1.15450 +/- 0.00096
+       38/1    1.15949    1.15488 +/- 0.00096
+       39/1    1.15808    1.15511 +/- 0.00092
+       40/1    1.15045    1.15480 +/- 0.00091
+       41/1    1.15930    1.15508 +/- 0.00090
+       42/1    1.14710    1.15461 +/- 0.00096
+       43/1    1.15204    1.15447 +/- 0.00092
+       44/1    1.16070    1.15480 +/- 0.00093
+       45/1    1.15904    1.15501 +/- 0.00091
+       46/1    1.15583    1.15505 +/- 0.00086
+       47/1    1.15605    1.15509 +/- 0.00083
+       48/1    1.15284    1.15499 +/- 0.00079
+       49/1    1.15467    1.15498 +/- 0.00076
+       50/1    1.15272    1.15489 +/- 0.00074
+       51/1    1.15365    1.15484 +/- 0.00071
+       52/1    1.15544    1.15487 +/- 0.00068
+       53/1    1.15607    1.15491 +/- 0.00066
+       54/1    1.15252    1.15483 +/- 0.00064
+       55/1    1.15903    1.15497 +/- 0.00063
+       56/1    1.15560    1.15499 +/- 0.00061
+       57/1    1.15936    1.15512 +/- 0.00061
+       58/1    1.16365    1.15538 +/- 0.00065
+       59/1    1.16070    1.15554 +/- 0.00065
+       60/1    1.16012    1.15567 +/- 0.00064
+       61/1    1.15906    1.15576 +/- 0.00063
+       62/1    1.15758    1.15581 +/- 0.00061
+       63/1    1.15527    1.15580 +/- 0.00060
+       64/1    1.15984    1.15590 +/- 0.00059
+       65/1    1.16083    1.15603 +/- 0.00059
+       66/1    1.15545    1.15601 +/- 0.00058
+       67/1    1.15493    1.15599 +/- 0.00056
+       68/1    1.15231    1.15590 +/- 0.00056
+       69/1    1.15862    1.15596 +/- 0.00055
+       70/1    1.15179    1.15587 +/- 0.00054
+       71/1    1.15871    1.15593 +/- 0.00053
+       72/1    1.15660    1.15595 +/- 0.00052
+       73/1    1.16083    1.15605 +/- 0.00052
+       74/1    1.14953    1.15591 +/- 0.00053
+       75/1    1.15720    1.15594 +/- 0.00052
+       76/1    1.16230    1.15606 +/- 0.00052
+       77/1    1.15842    1.15611 +/- 0.00051
+       78/1    1.15611    1.15611 +/- 0.00050
+       79/1    1.15802    1.15615 +/- 0.00050
+       80/1    1.16023    1.15622 +/- 0.00049
+       81/1    1.14949    1.15610 +/- 0.00050
+       82/1    1.15130    1.15601 +/- 0.00050
+       83/1    1.15638    1.15602 +/- 0.00049
+       84/1    1.15342    1.15598 +/- 0.00048
+       85/1    1.15896    1.15603 +/- 0.00048
+       86/1    1.16140    1.15611 +/- 0.00048
+       87/1    1.16206    1.15621 +/- 0.00048
+       88/1    1.15680    1.15622 +/- 0.00047
+       89/1    1.15625    1.15622 +/- 0.00046
+       90/1    1.15212    1.15616 +/- 0.00046
+       91/1    1.15756    1.15618 +/- 0.00045
+       92/1    1.16175    1.15626 +/- 0.00046
+       93/1    1.15148    1.15619 +/- 0.00045
+       94/1    1.16113    1.15626 +/- 0.00045
+       95/1    1.15735    1.15628 +/- 0.00045
+       96/1    1.15615    1.15628 +/- 0.00044
+       97/1    1.15539    1.15626 +/- 0.00043
+       98/1    1.15845    1.15629 +/- 0.00043
+       99/1    1.15909    1.15633 +/- 0.00043
+      100/1    1.16008    1.15638 +/- 0.00042
+ Creating state point statepoint.100.h5...
+
+ =======================>     TIMING STATISTICS     <=======================
+
+ Total time for initialization     =  7.8085E+00 seconds
+   Reading cross sections          =  7.1681E+00 seconds
+ Total time in simulation          =  1.9457E+03 seconds
+   Time in transport only          =  1.9106E+03 seconds
+   Time in inactive batches        =  7.6672E+01 seconds
+   Time in active batches          =  1.8691E+03 seconds
+   Time synchronizing fission bank =  2.7982E+01 seconds
+     Sampling source sites         =  1.0066E-01 seconds
+     SEND/RECV source sites        =  3.6054E-02 seconds
+   Time accumulating tallies       =  1.3282E-03 seconds
+ Total time for finalization       =  6.4230E-03 seconds
+ Total time elapsed                =  1.9538E+03 seconds
+ Calculation Rate (inactive)       =  32606.6 neutrons/second
+ Calculation Rate (active)         =  4012.73 neutrons/second
+
+ ============================>     RESULTS     <============================
+
+ k-effective (Collision)     =  1.15659 +/-  0.00038
+ k-effective (Track-length)  =  1.15638 +/-  0.00042
+ k-effective (Absorption)    =  1.15639 +/-  0.00042
+ Combined k-effective        =  1.15647 +/-  0.00029
+ Leakage Fraction            =  0.00000 +/-  0.00000
+
+[[[ 0.67796  0.       0.       0.       0.     ]]
+
+ [[ 1.24436  0.       0.       0.       0.     ]]
+
+ [[ 1.25328  0.       0.       0.       0.     ]]
+
+ [[ 1.21763  0.       0.       0.       0.     ]]
+
+ [[ 1.15647  0.       0.       0.       0.     ]]]

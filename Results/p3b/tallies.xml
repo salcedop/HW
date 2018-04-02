@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tallies>
+  <filter id="78" type="cell">
+    <bins>1 2 3 4</bins>
+  </filter>
+  <filter id="79" type="energy">
+    <bins>0.0 0.625</bins>
+  </filter>
+  <filter id="80" type="energy">
+    <bins>0.625 20000000.0</bins>
+  </filter>
+  <filter id="84" type="cell">
+    <bins>1</bins>
+  </filter>
+  <tally id="89" name="leakage">
+    <filters>78</filters>
+    <scores>current</scores>
+  </tally>
+  <tally id="90" name="thermal leakage">
+    <filters>78 79</filters>
+    <scores>current</scores>
+  </tally>
+  <tally id="91" name="fast leakage">
+    <filters>78 80</filters>
+    <scores>current</scores>
+  </tally>
+  <tally id="92" name="fiss.rate">
+    <scores>nu-fission</scores>
+  </tally>
+  <tally id="93" name="abs.rate">
+    <scores>absorption</scores>
+  </tally>
+  <tally id="94" name="therm.abs.rate">
+    <filters>79</filters>
+    <scores>absorption</scores>
+  </tally>
+  <tally id="95" name="therm.fiss.rate">
+    <filters>79</filters>
+    <scores>nu-fission</scores>
+  </tally>
+  <tally id="96" name="fuel.therm.abs.rate">
+    <filters>79 84</filters>
+    <scores>absorption</scores>
+  </tally>
+</tallies>
