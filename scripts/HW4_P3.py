@@ -14,7 +14,7 @@ def build_first_model(ppm):
             r2 = rfuel + 0.01
             r3 = rfuel + 0.06
             lattice="rectangular"
-            pitch = 1.40
+            pitch = 5
             uo2 = openmc.Material(1,"fuel",temperature=900)
             uo2.add_element('U', 1.0, enrichment=0.7)
             uo2.add_element('O', 2.0)
@@ -70,9 +70,9 @@ def build_first_model(ppm):
             #Settings
 
             settings = openmc.Settings()
-            total_batches = 100
+            total_batches = 20
             settings.batches = total_batches
-            settings.inactive = 25
+            settings.inactive = 5
             settings.particles = 100000
 
             bounds = [-rfuel, -rfuel, -rfuel, rfuel, rfuel, rfuel]
@@ -159,7 +159,7 @@ def build_second_model(enrichment):
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('-p','--problem',choices=('p1','p2','p3'), default='p1',
+parser.add_argument('-p','--problem',choices=('p1','p2'), default='p1',
                    help='problem number')
 parser.add_argument('-n','--node',action='store_true',
                    help='Are you using Skylake node?')
@@ -174,28 +174,24 @@ else:
 
 if (args.problem == 'p1'):
 
-  model = 'buid_first_model'
+  crit_var,guess,keffs = openmc.search_for_keff(build_second_model,initial_guess=1500,
+                                              tol=1.E-2,print_iterations=True)
 
-elif(args.problem == 'p2'):
-  
-  moderator = 'build_second_model'
+else:
 
-elif(args.problem == 'p3'):
-
-   moderator = 'light_water'
-   enrichment = 4
-   lattice = ['rectangular','triangular']
-
-
-#crit_var,guess,keffs = openmc.search_for_keff(build_second_model,bracket=[2.5,7.5],
-#                                              tol=1.E-2,bracketed_method='bisect',
-#                                              print_iterations=True)
-
-crit_var,guess,keffs = openmc.search_for_keff(build_first_model,initial_guess=1000.,
+   crit_var,guess,keffs = openmc.search_for_keff(build_second_model,initial_guess=8.,
                                               tol=1.E-2,print_iterations=True)
 
 
-print('Critical Variable Concentration: {:4.0f} %'.format(crit_var))
+#crit_var,guess,keffs = openmc.search_for_keff(build_first_model,bracket=[1900,2800],
+#                                              tol=1.E-2,bracketed_method='bisect',
+#                                              print_iterations=True)
+
+#crit_var,guess,keffs = openmc.search_for_keff(build_second_model,initial_guess=8.,
+                                              #tol=1.E-2,print_iterations=True)
+
+
+print('Critical Variable Concentration: '+str(crit_var))
 openmc.run(mpi_args=mpi_args)
             
 os.remove('summary.h5')

@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import os
 import pandas as pd
 import argparse
+import math
+
 
 #material 1
 
@@ -187,6 +189,13 @@ parser.add_argument('-n','--node',action='store_true',
 
 args = parser.parse_args()
 
+#pitch = [8.5,9.,9.5,10.,10.5,11.]
+#pitch = [8,8.5,9.,9.5,10.]
+
+pitch  = [1.15,1.2,1.3,1.8,2.,2.2,2.4,2.6,2.8,3.] #light-water
+#pitch = [3.,6.,9.,12.,15.] #graphite 
+#[1.,7.,10.,15.,20.] #heavy water
+x = pitch
 #set MPI argument
 if args.node:
 
@@ -199,14 +208,14 @@ if (args.problem == 'p1'):
   moderator = 'heavy_water'
   enrichment = None #fresh
   lattice = ['rectangular']
-
+  xtitle = 'pitch (cm)'
 
   if (args.subproblem == 'a'):
      
      ran = 1
      offset = 0
      proc_tallies = False
-     title = 'k_versus_rod_pitch'
+     title = 'k_versus_rod_pitch_heavy-water'
      ytitle = 'k'
      
      plot_legend = ['Rectangular lattice']
@@ -214,10 +223,10 @@ if (args.problem == 'p1'):
      
      ran = 4
      offset = 1
-     title = 'Four_factors_versus_rod_pitch'
+     title = 'Four_factors_versus_rod_pitch_heavy-water'
      ytitle = 'Four factors'
      
-     plot_legend = ['esc.prob','fast.fiss','thermal.fiss','eta']
+     plot_legend = ['esc.prob','fast.fiss','thermal.uti','eta']
      proc_tallies = True
 
 elif(args.problem == 'p2'):
@@ -225,12 +234,12 @@ elif(args.problem == 'p2'):
   moderator = 'graphite'
   enrichment = None #fresh
   lattice = ['rectangular']
-
+  xtitle = 'pitch (cm)'
   
   if (args.subproblem == 'a'):
      ran = 1
      offset = 0
-     title = 'k_versus_rod_pitch'
+     title = 'k_versus_rod_pitch_graphite'
      ytitle = 'k'
 
      plot_legend = ['Rectangular lattice']
@@ -239,10 +248,10 @@ elif(args.problem == 'p2'):
       
      ran = 4
      offset = 1
-     title = 'Four_factors_versus_rod_pitch'
+     title = 'Four_factors_versus_rod_pitch_graphite'
      ytitle = 'Four factors'
      
-     plot_legend = ['esc.prob','fast.fiss','thermal.fiss','eta']
+     plot_legend = ['esc.prob','fast.fiss','thermal.uti','eta']
      proc_tallies = True
 elif(args.problem == 'p3'):
 
@@ -250,20 +259,28 @@ elif(args.problem == 'p3'):
    enrichment = 4
    lattice = ['rectangular','triangular']
 
+   plot_legend = ['Rectangular lattice','Hexagonal lattice']
+   ytitle = 'k'
+   ran = 1
+   offset = 0
    if (args.subproblem == 'a'):
      
-     title = 'k_versus_rod_pitch'
-     ytitle = 'k'
-     ran = 1
-     offset = 0
-     plot_legend = ['Rectangular lattice','Hexagonal lattice']
+     title = 'k_versus_rod_pitch_light-water'
+     xtitle = 'pitch (cm)'
+     
      proc_tallies = False
    else:
-     raise ValueError("cannot specify combination of p3 and subp b")
-
-
-pitch = [1.4,2.0]
-
+     #raise ValueError("cannot specify combination of p3 and subp b")
+     title = 'k_versus_volume_ratio_mod_to_fuel_light-water'
+     xtitle = 'Moderator to fuel volumne ratio'
+     proc_tallies = False    
+     l_pitch = len(pitch)
+     x = np.zeros([l_pitch])
+     mod_to_fuel_hex = np.zeros([l_pitch])
+     for ii in range(l_pitch):
+         x[ii] = ((pitch[ii]**2)/(math.pi*(0.5**2)))-1
+         mod_to_fuel_hex[ii] = ((3*math.sqrt(3)/2)*pitch[ii]**2)/(math.pi*0.5**2)-1
+     
 #Settings
 
 settings = openmc.Settings()
@@ -292,38 +309,34 @@ factors = np.zeros([nt,nl,5])
 for j in range(nt):
     for n in range(nl):
 
-            create_material(0,pitch[j],lattice[n],enrichment,moderator,temp1,temp2)
+           create_material(0,pitch[j],lattice[n],enrichment,moderator,temp1,temp2)
             
-            openmc.run(mpi_args=mpi_args)
+           openmc.run(mpi_args=mpi_args)
             
-            #make sure the number in this file name matches the number of cycles you are running!!!\n",
-            sp = openmc.StatePoint('statepoint.'+str(total_batches)+'.h5')
-            # this reads the tally with all reaction rates, not just absorption\n",
-            #tally = sp.get_tally(scores=['absorption'])
-            # this is the final k-effective of the simulation\n
-            #k[j,m] = str(sp.k_combined).split('+')[0]
-            factors[j,n,0] = str(sp.k_combined).split('+')[0]
-            if proc_tallies:
+           sp = openmc.StatePoint('statepoint.'+str(total_batches)+'.h5')
+           factors[j,n,0] = str(sp.k_combined).split('+')[0]
+           if proc_tallies:
                factors[j,n,1:5] = post_process_statepoint(sp)
                
             #os.remove('statepoint.'+str(total_batches)+'.h5')
-            os.remove('summary.h5')
-            del sp
+           os.remove('summary.h5')
+           del sp
  
 #print(k)
 print(factors)
 
 plt.figure(figsize=(20,10))
 
-   
 for i in range(ran):
   for j in range(nl):
-      plt.plot(pitch,factors[:,j,i+offset], linewidth=5)
+      if ((j != 0) and (args.subproblem == 'b')):
+         x = mod_to_fuel_hex
+      plt.plot(x,factors[:,j,i+offset], linewidth=5)
 
 plt.legend(plot_legend, fontsize=12)
 
 plt.title(title,fontsize=30)
-plt.xlabel('Pitch', fontsize=30)
+plt.xlabel(xtitle, fontsize=30)
 plt.ylabel(ytitle, fontsize=30)
 plt.xticks(fontsize=14)
 plt.yticks(fontsize=14)
